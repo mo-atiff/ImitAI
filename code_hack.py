@@ -41,7 +41,7 @@ st.markdown("<h1 style='text-align: centre; color: red;'>ImitAIte</h1>",
 def get_imitation_response():
     if "messages" not in st.session_state.keys(): 
         st.session_state.messages = [
-            {"role": "assistant", "content": "Example : You are captian jack sparrow you are about to attack a ship with your mates what would you say?"}
+            {"role": "assistant", "content": "Example : You are captain Jack Sparrow you are about to attack a ship with your mates what would you say?"}
         ]
 
     if prompt := st.chat_input("Describe scenario"): 
