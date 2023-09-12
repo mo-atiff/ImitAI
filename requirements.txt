@@ -1,0 +1,2 @@
+clarifai_grpc==9.8.0
+streamlit==1.25.0
