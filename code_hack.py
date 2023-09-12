@@ -4,7 +4,7 @@ from clarifai_grpc.grpc.api import resources_pb2, service_pb2, service_pb2_grpc
 from clarifai_grpc.grpc.api.status import status_code_pb2
 
 
-PAT = 'd211277daab441b793887a652b56c46a'
+PAT = st.secrets['pat']
 channel = ClarifaiChannel.get_grpc_channel()
 stub = service_pb2_grpc.V2Stub(channel)
 metadata = (('authorization', 'Key ' + PAT),)
